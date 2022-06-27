@@ -1,6 +1,6 @@
 #!/bin/sh
 
-LIST=( $(find . -name $1) )
+LIST=( $(find / -name $1) )
 NUMLINES=( $(wc -l LIST) )
 
 if [[ $NUMLINES == 0 ]]
