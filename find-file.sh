@@ -1,12 +1,12 @@
 #!/bin/sh
 
-LIST=( $(find . -name $1) )
+LIST=( $(find / -name $1) )
 NUMLINES=( $(echo -n "$LIST" | grep -c '^') )
 
 if [[ $NUMLINES == 0 ]]
 then
-	echo "Found 0 matches."
+	printf "Found 0 matches\n"
 elif [[ $NUMLINES != 0 ]]
 then
-	echo "Found $NUMLINES matches.\n$LIST"
+	printf "Found $NUMLINES matches\n$LIST\n"
 fi
