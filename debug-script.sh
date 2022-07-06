@@ -4,7 +4,6 @@
 COUNT=0
 #program result variable
 PRGM=$(./problematic-script.sh 2>&1)
-#source ./problematic-script.sh
 
 #while loop until failure
 while [ $? -eq 0 ]
