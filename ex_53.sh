@@ -12,5 +12,5 @@ then
 	rm apache_access.tar.gz
 fi
 
-#obtaining unique ip addresses
-awk '{print $1;}' apache_access | sort | uniq | wc -l
+
+
