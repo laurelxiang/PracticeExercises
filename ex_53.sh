@@ -12,5 +12,4 @@ then
 	rm apache_access.tar.gz
 fi
 
-
-
+awk '{a[$9]++} END{for(s in a){print s" "a[s]}}' apache_access | sort -k1 -k2
