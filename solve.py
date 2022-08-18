@@ -54,3 +54,20 @@ print('Sending answer: ', answer_1)
 proc.stdin.write(bytes(answer_1, 'utf-8'))
 proc.stdin.write(bytes('\n', 'utf-8'))
 proc.stdin.flush()
+
+# Read an empty line from standard output
+print(proc.stdout.readline())
+# Read another line from standard output
+#print(proc.stdout.readline())
+
+# Read question 3 from standard output
+question_3 = proc.stdout.readline().decode("utf-8")
+print('\nReceived question 1: ', question_3)
+# Parse out the question and calculate the answer
+
+# Send answer + \n to standard input
+print('Sending answer: ', answer_1)
+proc.stdin.write(bytes(answer_1, 'utf-8'))
+proc.stdin.write(bytes('\n', 'utf-8'))
+proc.stdin.flush()
+
