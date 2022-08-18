@@ -32,7 +32,7 @@ print('\nReceived question 1: ', question_2)
 arr2 = question_2.split("(")
 arr2 = arr2[1].split(")")
 arr2 = arr2[0]
-answer_1 = str(math.sqrt(int(arr2)))
+answer_1 = str(int(math.sqrt(int(arr2))))
 # Send answer + \n to standard input
 print('Sending answer: ', answer_1)
 proc.stdin.write(bytes(answer_1, 'utf-8'))
@@ -50,7 +50,7 @@ print('\nReceived question 1: ', question_3)
 # Parse out the question and calculate the answer
 
 # Send answer + \n to standard input
-print('Sending answer: ', answer_1)
+print('Sending answer: ', "nothing")
 proc.stdin.write(bytes(answer_1, 'utf-8'))
 proc.stdin.write(bytes('\n', 'utf-8'))
 proc.stdin.flush()
@@ -66,7 +66,7 @@ print('\nReceived question 1: ', question_3)
 # Parse out the question and calculate the answer
 
 # Send answer + \n to standard input
-print('Sending answer: ', answer_1)
+print('Sending answer: ', "n/a")
 proc.stdin.write(bytes(answer_1, 'utf-8'))
 proc.stdin.write(bytes('\n', 'utf-8'))
 proc.stdin.flush()
