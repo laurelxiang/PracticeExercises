@@ -63,7 +63,7 @@ print(proc.stdout.readline())
 question_1 = proc.stdout.readline().decode("utf-8")
 print('\nReceived question 1: ', question_1)
 # Parse out the question and calculate the answer
-match_1=re.match(r"What is (\d+)\// (\d+)\?", question_1)
+match_1=re.match(r"What is (\d+) \// (\d+)\?", question_1)
 answer_1 = str(int(match_1.group(1)) // int(match_1.group(2)))
 # Send answer + \n to standard input
 print('Sending answer: ', answer_1)
