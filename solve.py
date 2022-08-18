@@ -31,7 +31,7 @@ print('\nReceived question 1: ', question_2)
 #answer_1 = str(math.sqrt(int(match_1.group(1))))
 arr2 = question_2.split("(")
 arr2 = arr2[1].split(")")
-arr2 = arr[0]
+arr2 = arr2[0]
 answer_1 = str(math.sqrt(int(arr2)))
 # Send answer + \n to standard input
 print('Sending answer: ', answer_1)
